@@ -1,0 +1,18 @@
+[project]
+name = "driver-testing-portfolio"
+version = "0.1.0"
+description = "Mock driver testing portfolio for Control4, RTI and Crestron."
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+addopts = "-ra"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W", "B", "UP"]
+ignore = ["E501"]
